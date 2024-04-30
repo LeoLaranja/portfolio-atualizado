@@ -1,0 +1,207 @@
+body{
+    background-image: url(./img/pc\ 3.jpeg);
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+img{
+    width: 270px;
+    height: 270px;
+    border-radius: 15px;
+    z-index: 2;
+}
+.strong{
+    color: #5fe2ff;
+}
+.strong-2{
+    color: #b1f1ff;
+}
+.cabecalho{
+    display: flex;
+    margin-bottom: 63px;
+    font-family: "Montserrat", sans-serif;
+    padding: 2% 0 0 10%;
+    width: 100%;
+    justify-content: end;
+    margin-right: 380px;
+}
+.cabecalho_menu ul{
+    display: flex;
+    gap: 10px;
+}
+.cabecalho_menu ul :hover{
+    background-color: rgba(24, 24, 123, 0.87);
+}
+.cabecalho_menu ul a{
+    text-decoration: none;
+    list-style: none;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cabecalho_link{
+    background-color: transparent;
+    border-radius: 12px;
+    border: 2px solid  #22D4FD;
+    width: 150px;
+    height: 30px;
+    background-color: rgba(6, 7, 63, 0.87);
+    font-size: 18px;
+    color: #b1f1ff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    padding: 10px 0 10px 0;
+    gap: 6px;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 1000px;
+    background-color: rgba(6, 7, 63, 0.87);
+    border-radius: 15px;
+    border: 2px solid #22D4FD;
+    padding: 30px;
+   
+}
+.area-txt {
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    justify-content: center;
+    font-size: 14px;
+    width: 580px;
+    padding-left: 45px;
+    gap: 20px;
+
+}
+.area-txt p {
+    font-size: 17px;
+    font-family: "Montserrat", sans-serif;
+    font-weight:500;
+    color: #d8f8ff;
+}
+.area-txt h1 {
+    font-family: "Krona One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.area-img {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.area-img img {
+    border: 2px solid  #22D4FD;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 8px;
+}
+.links h2{
+    font-family:"Montserrat", sans-serif;
+    color: #5fe2ff;
+}
+.links_button{
+    background-color: transparent;
+    border-radius: 12px;
+    border: 1px solid  #22D4FD;
+    width: 250px;
+    height: 30px;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    color: #b1f1ff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    padding: 10px 0 10px 0;
+    gap: 6px;
+}
+.links_button:hover{
+    background-color: rgba(24, 24, 123, 0.87);
+}
+.linkedin_logo, .github_logo{
+    width: 18px;
+    height: 18px;
+}
+
+.footer_bar{
+    background-color: rgba(6, 7, 63, 0.87);
+    width: 100% ;
+    margin-top: 85px;
+}
+.footer_bar_area{
+    padding: 14px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+
+
+@media (max-width: 1100px) {
+    .detail {
+        display: none;
+    }
+}
+
+@media (max-width: 768px){
+    main{
+        width: 700px;
+        grid-template-columns: repeat(1 , 1fr);
+        gap: 30px;
+        text-align: center;
+    }
+    .cabecalho{
+        padding: 2% 0 0 0%;
+        width: auto;
+        margin-right: 0;
+
+    }
+}
+
+@media (max-width: 425px){
+    main{
+        width: 300px;
+    }
+    .cabecalho_menu ul{
+        width: 260px;
+    }
+    .cabecalho_menu ul a{
+        font-size: 11px;
+    }
+    .area-txt h1, .area-txt p{
+        font-size: 14px
+    }
+    .area-txt{
+        padding-left: 0;
+        width: 230px;
+    }
+    img{
+        width: 230px;
+        height: 230px;
+    }
+    .footer_bar_area p{
+        font-size: 10px;
+    }
+    .links h2 {
+        font-family: "Montserrat", sans-serif;
+        color: #5fe2ff;
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+    .links_button{
+        width: 200px;
+    }
+}
